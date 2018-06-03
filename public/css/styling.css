@@ -1,0 +1,79 @@
+body {
+	padding-left: 100px;
+	padding-right: 100px;  
+	font-family: "verdana";
+}
+
+#description {
+	font-family: "times new roman";
+	font-size: 18px;
+}
+
+#feedData {
+	display: flex;
+}
+
+#feedInfo {
+	padding: 20px;
+}
+
+#heading {
+	color: #005ce6;
+}
+
+#head-main {
+	display: flex;
+}
+
+#home-main {
+	color: #005ce6;
+	display: flex;
+}
+
+#home-main-photo {
+	width: 70px;
+	height: 70px;
+	padding: 0px;
+}
+
+#home-main-title {
+	font-size: 23px;
+	padding: 20px;
+	font-family: "comic sans ms";
+}
+
+#name {
+	font-size: 20px;
+	padding: 10px;
+}
+
+#nav-item {
+	padding: 20px;
+}
+
+#photo {
+	height: 200px;
+}
+
+
+#profile-photo {
+	height: 150px;
+	border: 2px solid;
+}
+
+#profile-photo-div {
+	width: 30%;
+}
+
+#submit-button {
+	float: right;
+}
+
+#text-area {
+	columns: 500;
+}
+
+#textarea-div {
+	padding-top: 10px;
+}
+

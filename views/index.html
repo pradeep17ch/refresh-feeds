@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upstox - Online Share/Stock Trading, Options Trading, Discount Brokers in India</title>
+	<link rel="shortcut icon" href="http://res.cloudinary.com/dxmkaxwx8/image/upload/v1527970177/upstox.ico">
+	<!-- css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/styling.css">
+	<!-- scripts -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="/public/js/app.js"></script>
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-sm bg-light navbar-light">
+		<a id="home-main" class="navbar-brand" href="#">
+			<img id="home-main-photo" src="http://res.cloudinary.com/dxmkaxwx8/image/upload/v1527970177/upstox.ico"> 
+			<div id="home-main-title">UPSTOX</div>
+		</a>
+		<ul class="navbar-nav">
+		<li id ="nav-item" class="nav-item active">
+		  <a class="nav-link" href="/">My feeds</a>
+		</li>
+		<li id ="nav-item" class="nav-item">
+		  <a class="nav-link" href="#">Other feeds</a>
+		</li>
+		<li id ="nav-item" class="nav-item">
+		  <a class="nav-link" href="#">Company feeds</a>
+		</li>
+		</ul>
+	</nav>
+	<br>
+
+	<!-- Head -->
+	<div id="head-main">
+		<div id="profile-photo-div">
+			<center>
+				<img id="profile-photo" src="http://res.cloudinary.com/dxmkaxwx8/image/upload/v1527970327/RandomUser.jpg">
+				<br/>
+				<div id="name"><b>Harry Potter</b></div>
+			</center>
+		</div>
+		<div id="textarea-div">
+			<center>
+				<textarea cols="80" rows="5" placeholder="What's on your mind..."></textarea>
+			</center>
+			<button id="submit-button" class="btn btn-success">Submit</button>
+		</div>
+	</div>
+
+	<hr/>
+
+	<!-- Feeds -->
+	<div id="feedBody"  ng-repeat="feed in data">
+		<div id="feedData">
+			<img id ="photo" ng-src="{{feed.photo}}">
+		
+			<div style="display: ;" id="feedInfo">
+				<h5>
+					<div id="heading">{{feed.heading}}</div>
+				</h5>
+				<br/>
+				<div id="description">{{feed.description}}</div>
+				<a href="">Read more...</a>
+			</div>
+			<br/>
+		</div>
+		<hr/>
+	</div>
+
+</body>
+</html>
